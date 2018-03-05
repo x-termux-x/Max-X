@@ -1,0 +1,34 @@
+# Tool Name :- Max-X
+# Author :- MR . MAx_X
+# Date :- 4/3/2018
+# Powered By :- MR . MAx_X
+
+if [ ! -e /data/data/com.termux/files/usr/bin/python ];
+then
+	pkg install -y python
+fi
+
+clear
+
+if [ ! -e /data/data/com.termux/files/usr/bin/python2 ];
+then
+	pkg install -y python2
+fi
+
+clear
+
+if [ ! -e /usr/bin/python ];
+then
+	apt-get install -y python
+fi
+
+clear
+
+if [ ! -e /usr/bin/python2 ];
+then
+	apt-get install -y python2
+fi
+
+clear
+python2 .Insc.aex
+exit
